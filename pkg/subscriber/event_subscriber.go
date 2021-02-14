@@ -12,7 +12,7 @@ package subscriber
 // A Listener is similar to EventSubscriber, but listener doesn't know itself what events it is interested in.
 // Using listeners separately are more flexible because your app can enable or disable each of them conditionally depending on some configuration value.
 type Listener struct {
-	Callable func(event interface{})
+	Callback func(event interface{})
 	Priority int
 }
 
