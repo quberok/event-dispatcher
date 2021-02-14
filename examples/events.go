@@ -13,9 +13,9 @@ import "github.com/quberok/event-dispatcher/pkg/event"
 
 // Our events
 const (
-	ORDER_CREATED_EVENT   = "order.created"
-	ORDER_PAID_EVENT      = "order.confirmed"
-	ORDER_DELIVERED_EVENT = "order.delivered"
+	OrderCreatedEvent   string = "order.created"
+	OrderPaidEvent      string = "order.confirmed"
+	OrderDeliveredEvent string = "order.delivered"
 )
 
 // orderEvent any data related to order place here
