@@ -18,11 +18,11 @@ type Listener struct {
 
 // An EventSubscriber knows itself what events it is interested in.
 type EventSubscriber interface {
-	// Returns an array of event names this subscriber wants to listen to.
+	// Returns a map of event names this subscriber wants to listen to.
 	//
 	// The code must not depend on runtime state.
 	// All logic depending on runtime state must be put into the individual methods handling the events.
 	//
 	// The first string argument contains the event name to listen to
-	GetSubscribedEvents() map[string]Listener
+	GetSubscribedEvents() map[string][]Listener
 }
