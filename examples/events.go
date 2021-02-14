@@ -21,7 +21,7 @@ const (
 // orderEvent any data related to order place here
 type orderEvent struct {
 	event.Event
-	order interface{}
+	order Order
 }
 
 // orderPaidEvent extends orderEvent to store some payment details
